@@ -1,0 +1,255 @@
+\documentclass{beamer}
+\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc} %usar se salvar com codificaï¿½ï¿½o UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx} %para incluir fotos.
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{scalefnt}
+\usepackage{amsmath,amsfonts,amssymb,amsxtra,empheq,amsthm} %todas os pacotes da AMS (American Mathematical Society).
+\usepackage[mathscr]{eucal}
+\usepackage{hyperref} %transformas o sumario e as citaÃ§Ãµes me hiperlinks
+\usepackage{natbib}
+\usepackage{textcomp} %acho que permite uso de 1Âº 2Âª, ordinais e demais coisas.
+\usepackage{icomma} %permite o uso de vï¿½rgula como separador decimal no ambiente matemï¿½tico
+\usepackage{comment} %permite o uso de comentï¿½rios entensos entre \begin{comment}...\end{comment}
+\usepackage{color} %permite aplicar cores ao documento, em palavras, frases, etc. \textcolor{red}{text in red}
+%\usepackage{default}
+%\usepackage{subfigure}%subfiguras em um ambiente de figure
+%\usepackage{wrapfig}%para a inserÃ§Ã£o se figuras ao lado de textos
+%\usepackage{wasysym} %sÃ­mbolos especiais com \female e \male etc
+%\newtheorem{theorem}{Teorema}[section]
+\renewcommand {\baselinestretch}{1.5}
+%\newtheorem{theorem}{Teorema}[section]
+%\newtheorem{corollary}[theorem]{Corolário}
+%\newtheorem{definition}[theorem]{Definição}
+%\newtheorem{example}[theorem]{Exemplo}
+%\newtheorem{proposition}[theorem]{Proposição}
+%\newtheorem{remark}[theorem]{Observação}
+%\newtheorem{summary}[theorem]{Summary}
+%\newtheorem{theorems}{Teorema}[subsection]
+%\newtheorem{acknowledgements}[theorems]{Acknowledgement}
+%\newtheorem{definitions}[theorems]{Definição}
+%\newtheorem{propositions}[theorems]{Proposição}
+%\newtheorem{remarks}[theorems]{Observação}
+%\newtheorem{teorema}{Teorema}[section]
+
+\newtheorem{theo}{Teorema}[section]
+\newtheorem{Lem}{Lema}[section]
+
+
+
+\newcommand{\mat}[1]{\mbox{\boldmath{$#1$}}}
+\newcommand{\e}{{\rm e}}
+\newcommand{\Var}{{\rm Var}}
+\newcommand{\Cor}{{\rm Cor}}
+\newcommand{\Cov}{{\rm Cov}}
+\newcommand{\RSS}{{\rm RSS}} % Residual Sum of Squares
+%\newtheorem{theorem}{Teorema}
+%\usetheme{Warsaw}
+%\usetheme{Berlin} %quadradinha
+%\usetheme{Antibes}
+%\usetheme{Berkeley} %tem coluna a esquerda
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS} %+++++++++++++++++++++++
+%\usetheme{Darmstadt} %barras superiores***
+%\usetheme{Dresden} %barras em cima e em baixo***
+%\usetheme{Goettingen} %barra a direita
+%\usetheme{Ilmenau}
+%\usetheme{Luebeck}
+%\usetheme{Malmoe} %simples, muito bom!
+%\usetheme{Montpellier} %sim
+%\usetheme{Pittsburgh}
+%\usetheme{Singapore}
+%\usetheme{AnnArbor}
+%\usetheme{Bergen}
+%\usetheme{boxes}
+%\usetheme{Copenhagen}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Hannover}
+\usetheme{PaloAlto} %sim
+%\usetheme{Marburg}
+%\usetheme{PaloAlto} %achei legal
+%\usetheme{Rochester} %sim
+%\usetheme{Szeged}
+%\usetheme{progressbar} %baixado da net
+%\usetheme{Trondheim} %baixado da net
+%\usetheme{IAS_sidebar} %baixado da net
+
+ %%COLOR THEME%%
+%\usecolortheme{walmesverde} %meu esquema de cores!!
+%\usecolortheme{albatross}
+%\usecolortheme{beetle}
+%\usecolortheme{default}
+%\usecolortheme{dove}
+%\usecolortheme{lily}
+%\usecolortheme{rose}
+%\usecolortheme{seahorse}
+%\usecolortheme{structure}
+%\usecolortheme{wolverine}
+%\usecolortheme{beaver}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{fly}
+%\usecolortheme{orchid}
+%\usecolortheme{seagull} %bÃ£ozinho, em cinza
+%\usecolortheme{sidebartab}
+%\usecolortheme{whale}
+
+%\definecolor{verde}{rgb}{0.25,0.6,0.45} %0.25,0.6,0.45
+%%\definecolor{verde2}{rgb}{0.7,1.00,0.2}
+%\definecolor{vermelho}{rgb}{1.00,0.00,0.20} % color of the background of top navigation items at Debian web page
+%\definecolor{verdÃ£o2}{rgb}{0.7,1.00,0.2} %0.5, 1.00, 0.0}
+%\definecolor{verdÃ£o}{rgb}{0.00,0.54,0.27}
+%\setbeamercolor{structure}{fg=verdÃ£o}
+%%% Adopted from "whale"
+%\setbeamercolor*{palette primary}{use=structure, fg=black, bg=gray!30!white} %'fg' cor fonte do titulo
+%%\setbeamercolor*{palette secondary}  {use=structure, bg=blue}
+%\setbeamercolor*{palette tertiary}   {use=structure, fg=black, bg=verde}
+%%\setbeamercolor*{palette quaternary} {fg=blue, bg=blue} %'bg' cor da barra inferior esquerda=autores
+
+%\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45}
+
+\title[]{meu slide}
+\author[]{Josiane Correia de Souza Carvalho}
+\date{$05/09/2018$}
+%\logo{\includegraphics*[scale=0.178]{logo1.png}}
+
+\begin{document}
+%para criar a pÃ¡gina de rosto
+\frame{\titlepage} %inclui a front page
+%==================================================slide
+% cria o sumÃ¡rio
+\begin{frame}
+ \frametitle{Sumário}
+ \tableofcontents[pausesections]
+\end{frame}
+%-------------------------------------------------------
+%==================================================slide
+\section{Introdução}
+\subsection{Breve histórico}
+
+\begin{frame}
+slide 1 \pause
+jean 
+
+
+
+
+\begin{table}[]
+	\begin{tabular}{lllll}
+		\cline{1-4}
+		\multicolumn{1}{|l|}{dia} & \multicolumn{1}{l|}{valor} & \multicolumn{1}{l|}{hora}  & \multicolumn{1}{l|}{diy}  &  \\ \cline{1-4}
+		\multicolumn{1}{|l|}{01}  & \multicolumn{1}{l|}{14}    & \multicolumn{1}{l|}{21:14} & \multicolumn{1}{l|}{1452} &  \\ \cline{1-4}
+		&                            &                            &                           &  \\
+		&                            &                            &                           & 
+	\end{tabular}
+\end{table}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{LIGA}
+	\caption{}
+	\label{fig:liga}
+\end{figure}
+
+
+
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Histórico}
+	\begin{block}{História}
+		\begin{itemize}
+			\item \TeX {} é um programa de computador criado por Donald E. Knuth cujo objetivo principal é o processamento eletrônico de textos e fórmulas matemáticas.\pause
+			\item Começo desenvolvimento do programa foi em 1977 mas O \TeX{} como nós usamos hoje foi lançado em 1982. \pause
+			\item Versões convergem para o número $\pi$.\pause
+			\item Pacote \LaTeX{} desenvolvido em 1994
+		\end{itemize}
+	\end{block}
+\end{frame}
+\subsection{Algumas configurações de texto}
+\begin{frame}
+\begin{block}{Preâmbulo}
+	\begin{itemize}
+		\item O preâmbulo é onde são ditadas as configurações de pacotes e páginas.
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Espaçamento}
+	\begin{itemize}
+		\item Muitos caracteres de espaçamento consecutivos são tratados como apenas um espaço.\pause
+		\item Uma linha em branco entre duas linhas de texto definem um
+		parágrafo.
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Caracteres especiais}
+	\begin{itemize}
+		\item Alguns símbolos são caracteres reservados que possuem algum significado especial, eles não serão impressos e fazem com que o LaTex faça algumas coisas para você.\pause
+		\item \$ \{ \} \# \% \^{}
+		\item negrito, itálico, aumentando letras $\cdot$
+		\item aspas, traços, til
+		
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Enumerando itemizando}
+	\begin{itemize}
+		\item Enumerando, itemizando e descrevendo.\pause
+		\item Alinhamento do texto
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{Equações matemáticas}
+\begin{frame}
+\begin{block}{Algumas equações matemáticas}
+	\begin{itemize}
+		\item Equação no meio de textos e ao final. \pause
+		\item Frações, raiz, números elevados e sub escritos, integral.
+	\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{Tabelas, figuras, desenhos}
+\begin{frame}
+\begin{block}{Tabelas}
+	Latable.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Inserindo Figuras}
+	Exemplo de como inserir figuras.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Desenhando em \LaTeX}
+	Exemplo
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Alguns comando úteis para trabalhos acadêmicos}
+\begin{itemize}
+	\item Sumário
+    \item Lista de figuras
+    \item Lista de tabelas
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\end{document}

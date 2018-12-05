@@ -1,0 +1,6 @@
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdu\c c\~ao}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Breve hist\'orico}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Algumas configura\c c\~oes de texto}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Equa\c c\~oes matem\'aticas}{16}{0}{1}
+\beamer@subsectionintoc {1}{4}{Tabelas, figuras, desenhos}{18}{0}{1}

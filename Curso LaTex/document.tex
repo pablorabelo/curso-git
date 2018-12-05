@@ -1,0 +1,259 @@
+\documentclass[12pt,openright]{report}
+\topmargin-.9cm
+\oddsidemargin.4cm
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc} %pacote de acentuação
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm, amstext, amscd}
+%\left( \usepackage[dvips]{graphicx}
+\usepackage[all]{xy}
+\usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{longtable}
+%\usepackage{caption}
+\usepackage[justification=centering]{caption} % centralizar título das figuras e tabelas
+\usepackage{float}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[table]{xcolor}
+\pagestyle{myheadings} %número de páginas no topo à direita
+%\pagestyle{plain} %número de páginas no rodapé e no centro
+%\ProvidesFile{actuarialsymbol.dtx}
+%\usepackage{microtype}
+% \usepackage{rsfso}            % \mathcal variants
+%\usepackage{actuarialsymbol}[2017/04/10]
+%\usepackage{abnteX}
+
+%\usepackage[center,small]{caption}
+
+\geometry{paperwidth=210mm,paperheight=297mm,
+textwidth=180mm,textheight=240mm,
+top=20mm,bottom=20mm,left=18mm,right=18mm}
+
+\evensidemargin 0.2cm
+
+
+%\setlength{\textwidth}{16cm} \setlength{\textheight}{24cm}
+%\setlength{\hoffset}{-1mm} \setlength{\voffset}{-20pt}
+
+
+\renewcommand {\baselinestretch}{1.5}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{definition}[theorem]{Definição}
+\newtheorem{example}[theorem]{Exemplo}
+\newtheorem{proposition}[theorem]{Proposição}
+\newtheorem{remark}[theorem]{Observação}
+\newtheorem{summary}[theorem]{Summary}
+\newtheorem{theorems}{Teorema}[subsection]
+\newtheorem{acknowledgements}[theorems]{Acknowledgement}
+\newtheorem{definitions}[theorems]{Definição}
+\newtheorem{propositions}[theorems]{Proposição}
+\newtheorem{remarks}[theorems]{Observação}
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{Lem}{Lema}[section]
+%\newenvironment{proof}[1][Prova]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+
+\begin{document}
+jfibjabfvjiafbvjanfvjfnvjnfvjnvnk fjnjfvnjfv fjvnjfnvjifnvfj jnjfnvjfnjnfvj vnfjnvjfnjfnv njfnvjfnvjfnvjkf fnjfnjbfjkbakjfv f vjgkjanfkjvnfjhv afkjbngkjaf akjdfbkjabfkjbf. 
+
+novo parágrafo 
+
+o curso %é bem interessante %
+
+ é legal "por exemplo" ``por exemplo"
+
+
+
+
+\newpage
+
+\begin{center}
+	{\LARGE 	\textbf{Algumas formatações de texto}}
+\end{center}
+
+Notas de rodapé e notas de lado
+
+O comando footnote \footnote{insere o texto no rodapé}.
+
+a UNIFAL \footnote{universidade federal de alfenas}
+
+\begin{enumerate}
+	\item Você pode misturar os
+	ambientes de lista ao seu gosto:
+	\begin{itemize}
+		\item Mas eles podem ter uma
+		aparência melhor.
+		\item[-] Com um hífen.
+	\end{itemize}
+	\item Entretanto lembre-se:
+	\begin{description}
+		\item[Coisas inúteis] não se tornarão
+		úteis porque estão em uma lista.
+		\item[Coisas úteis], entretanto, podem
+		ser bem apresentadas em uma lista.
+	\end{description}
+\end{enumerate}
+\newpage
+\begin{center}
+	{\LARGE \textbf{Alguns exemplos matemáticos}}
+\end{center}
+
+% Exemplo 1
+\ldots quando Einstein introduziu sua fórmula
+\begin{equation}
+e = m \cdot c^2 \; ,
+\end{equation}
+que é ao mesmo tempo a mais conhecida
+e a menos compreendida fórmula da física.
+
+
+
+
+
+
+
+
+$ 1 $ 1
+
+$ A_b $
+
+
+
+
+
+
+
+
+
+
+
+% Exemplo 2
+\ldots do que segue a lei de Kirchoff:
+\begin{equation}
+\sum_{k=1}^{n} I_k = 0 \; .
+\end{equation}
+A lei da voltagem de Kirchhoff pode ser derivada \ldots
+
+\begin{center}
+	{\LARGE \textbf{Fração, raiz, números elevados e sub escritos}}
+\end{center}
+
+$\displaystyle \frac{1}{2} \ \, \ \ \sqrt{4}, \ \ 2^2, \ \  Y_i$
+
+$$ \int_{0}^{\infty} x^2 dx $$
+
+\begin{center}
+	{\LARGE \textbf{Alinhando fórmulas matemáticas}}
+\end{center}
+
+$
+y = \left\{ \begin{array}{ll}
+	a & \textrm{se $d>c$}\\
+	b+x & \textrm{de manhã}\\
+	l & \textrm{o resto do dia}
+\end{array} \right.
+$
+
+
+\begin{eqnarray}
+f(x) & = & \cos x \\
+f'(x) & = & -\sin x \\
+\int_{0}^{x} f(y)dy &
+= & \sin x
+\end{eqnarray}
+
+$
+\mathop{\mathrm{corr}}(X,Y)=
+\frac{\displaystyle
+	\sum_{i=1}^n(x_i-\overline x)
+	(y_i-\overline y)}
+{\displaystyle\biggl[
+	\sum_{i=1}^n(x_i-\overline x)^2
+	\sum_{i=1}^n(y_i-\overline y)^2
+	\biggr]^{1/2}}
+$
+
+\newpage
+{\LARGE \textbf{Inserindo Tabelas}}
+
+
+
+
+
+
+
+
+https://www.tablesgenerator.com/
+\newpage
+\textbf{{\LARGE Inserindo Figuras}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.1\linewidth]{LIGA}
+	\caption{}
+	\label{fig:liga}
+\end{figure}
+
+\newpage
+{\LARGE \textbf{Desenhando}}
+
+\begin{picture}(50,25)
+\put(20,5){\circle{20}}
+\put(20,5){\vector(0,1){10}}
+\put(50,5){\circle*{5}}
+\end{picture}
+
+
+\newpage
+{\LARGE \textbf{Alguns comandos úteis para Trabalhos acadêmicos}}
+%\newpage
+%\tableofcontents
+%\thispagestyle{empty}
+%\newpage
+%\listoffigures
+%\thispagestyle{empty}
+%\newpage
+%\listoftables
+%\thispagestyle{empty}
+\newpage
+Alguns acadêmicos da \textbf{Universidade Federal de Alfenas} – Campus Avançado de Varginha se juntaram para desenvolver um projeto \underline{{\LARGE inédito}} no país, a \textit{Liga de Ciências Atuariais (LCA)}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\linewidth]{LIGA}
+	%\caption{}
+	\label{fig:liga}
+\end{figure}
+
+No âmbito atuarial existem diversos conceitos e fórmulas, como por exemplo a famosa notação para o valor presente atuarial do seguro de vida temporário é dado por \footnote{$_{k}p_{x}q_{x+k}$ são probabilidade de sobrevivência e morte respectivamente, retiradas da tábua de vida}:
+
+\begin{equation} A^{1}_{x:n \rceil} = E[Z]= B \sum_{k=0}^{n-1} v^{k+1} \ \ _{k}p_{x}q_{x+k}
+\label{SegVidaTemp} 
+\end{equation}
+
+Alguns exemplos:
+
+\begin{table}[H]
+	\centering
+	\caption{Valores parciais do somatório para o cálculo do prêmio puro único de $A^{1}_{60:5 \rceil}$}
+	\label{my-label}
+	\begin{tabular}{@{}ccc@{}}
+		\hline
+		$k$                     & $v^{k+1}$       & $_{k}p_{x} \ \ q_{x+k}$    \\ \hline
+		0                     & 0,9672115 & 0,00886 \\
+		1                     &0,9354981 & 0,00955 \\
+		\multicolumn{1}{r}{2} & 0,9048246 & 0,01030 \\
+		\multicolumn{1}{r}{3} & 0,8751568 & 0,01110 \\
+		4                     & 0,8464617 & 0,01196 \\ \hline
+		\label{pq}
+	\end{tabular}
+\end{table}
+
+\end{document}
